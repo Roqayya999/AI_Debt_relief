@@ -74,7 +74,7 @@ AI-Debt-Relief/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Debt-Relief.git
+git clone https://github.com/Roqayya999/AI-Debt-Relief.git
 ```
 
 Move into project folder
@@ -259,7 +259,7 @@ Add screenshots of:
 **Abdul Roqayya**
 
 GitHub:
-https://github.com/yourusername
+https://github.com/Roqayya999
 
 ---
 
