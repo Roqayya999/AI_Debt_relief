@@ -12,7 +12,14 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS,
   },
 });
-
+transporter.verify((error, success) => {
+  if (error) {
+    console.log("❌ Email Configuration Error:");
+    console.log(error);
+  } else {
+    console.log("✅ Email Server Ready");
+  }
+});
 // ================= REGISTER =================
 
 const registerUser = async (req, res) => {

@@ -31,8 +31,15 @@ function Register() {
       alert(res.data.message);
 
       navigate("/login");
-    } catch (err) {
-      alert(err.response?.data?.message || "Registration Failed");
+
+    } catch (error) {
+      console.error("Registration Error:", error);
+
+      if (error.response) {
+        alert(error.response.data.message);
+      } else {
+        alert("Server is not running.");
+      }
     }
   };
 
